@@ -1,0 +1,11 @@
+{
+	"name": "tutorials",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies":
+	{
+		"express": "2.5.0",
+		"jade": ">= 0.0.1",
+		"mongoose": ">= 2.0.0"
+	}
+}

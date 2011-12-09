@@ -1,0 +1,32 @@
+#http://docs.sencha.com/ext-js/4-0/#!/guide/editable_grid
+
+express tutorials
+npm install -d
+node app.js
+
+ 
+ln -s -d /home/nelson/tools/ext-4.1-pr1 /home/nelson/nodejs/tutorials/public/extjs
+unlink /home/nelson/nodejs/tutorials/public/extjs
+
+#mongodb commands
+mongod --dbpath %MONGODB_HOME%/data/db
+
+use tutorials
+db.tutorials.drop()
+db.tutorials.insert({tutorialid: 't1', title: 'Biodiversity', pages: [{pageid: 'p1', title: 'Animals', text:'There are animals'}]});
+db.tutorials.insert({tutorialid: 't2', title: 'Genetics', pages: [{pageid: 'p1', title: 'Mendel', text:'Good job Gregor'}]});
+
+
+#set up git repository
+git init
+git add .
+
+# add deleted files to staging area
+git add -u 
+
+git commit -m "first commit"
+git remote add origin git@github.com:hcnh174/tutorials-nodejs.git
+git push origin master
+
+git clone git@github.com:hcnh174/tutorials-nodejs.git
+

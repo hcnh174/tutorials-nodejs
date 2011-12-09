@@ -1,0 +1,24 @@
+{
+    'success': true,
+    'results':
+    [
+        {
+            title: 'Biodiversity',
+            pages:
+            [
+            	{
+            		title: 'Animals',
+            		text: 'There are animals'
+            	},
+            	{
+            		title: 'Plants',
+            		text: 'There are also plants'
+            	},
+            	{
+            		title: 'Bacteria',
+            		text: 'etc.'
+            	}
+            ]
+        }      
+    ]
+}
