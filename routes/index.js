@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
-//var db = mongoose.connect('mongodb://127.0.0.1/tutorials')
-var db = mongoose.connect('mongodb://10.34.99.63:27017/tutorials')
+var db = mongoose.connect('mongodb://127.0.0.1/tutorials')
+//var db = mongoose.connect('mongodb://10.34.99.63:27017/tutorials')
 
 var pageSchema = new mongoose.Schema({
 	tutorialid: String,
@@ -21,7 +21,9 @@ var TutorialModel = mongoose.model('tutorials',tutorialSchema);
 
 exports.index = function(req, res){
   //res.render('index', { title: 'Express' })
-	res.redirect('/index.html'); 
+	//res.redirect('/index.html');
+	//res.render('index', {test: {name: 'Test'}});
+	res.render('index', {title: 'Test'});
 };
 
 

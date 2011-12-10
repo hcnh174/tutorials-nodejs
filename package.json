@@ -5,7 +5,8 @@
 	"dependencies":
 	{
 		"express": "2.5.0",
-		"jade": ">= 0.0.1",
-		"mongoose": ">= 2.0.0"
+		//"jade": ">= 0.0.1",
+		"mongoose": ">= 2.0.0",
+		"jqtpl": ">= 1.4.0" 
 	}
 }

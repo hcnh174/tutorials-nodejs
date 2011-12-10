@@ -2,15 +2,17 @@
 
 express tutorials
 npm install -d
+npm install jqtpl
 node app.js
-
  
 ln -s -d /home/nelson/tools/ext-4.1-pr1 /home/nelson/nodejs/tutorials/public/extjs
 unlink /home/nelson/nodejs/tutorials/public/extjs
 
 #mongodb commands
-mongod --dbpath %MONGODB_HOME%/data/db
-
+mongod --dbpath %MONGO_HOME%/data/db
+"D:\packages\mongodb-win32-i386-1.6.2\bin\mongod" --bind_ip  127.0.0.1  --logpath  d:\packages\mongodb-win32-i386-1.6.2\logs\log.txt  --logappend  --dbpath  "d:\packages\mongodb-win32-i386-1.6.2\data"  --directoryperdb  --service
+sc delete MongoDB
+  
 use tutorials
 db.tutorials.drop()
 db.tutorials.insert({tutorialid: 't1', title: 'Biodiversity', pages: [{pageid: 'p1', title: 'Animals', text:'There are animals'}]});
