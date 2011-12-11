@@ -4,6 +4,8 @@ express tutorials
 npm install -d
 npm install jqtpl
 node app.js
+
+npm install nodemon -g
  
 ln -s -d /home/nelson/tools/ext-4.1-pr1 /home/nelson/nodejs/tutorials/public/extjs
 unlink /home/nelson/nodejs/tutorials/public/extjs
